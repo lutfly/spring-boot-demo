@@ -3,7 +3,7 @@ spring:
     url: jdbc:mysql://localhost:3306/demo
     username: root
     password: Vv123
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       connection-init-sql: SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;
   jpa:
@@ -13,5 +13,5 @@ spring:
 server:
   port: 8080
 
-logging:
-  level.root: debug
+#logging:
+#  level.root: debug
