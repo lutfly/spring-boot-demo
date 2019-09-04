@@ -1,4 +1,4 @@
-package con.lutfly.springbootdemo.entity;
+package con.lutfly.sbdAcceptTransactional.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

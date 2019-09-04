@@ -1,8 +1,7 @@
-package con.lutfly.springbootdemo.aspect;
+package con.lutfly.sbdAcceptTransactional.aspect;
 
-import con.lutfly.springbootdemo.thread.AsyncTest;
+import con.lutfly.sbdAcceptTransactional.thread.AsyncTest;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.Ordered;
@@ -17,24 +16,24 @@ public class AspectTest {
     @Autowired
     private AsyncTest asyncTest;
 
-    @AfterReturning("@annotation(con.lutfly.springbootdemo.annotation.AnnotationTest)")
+    @AfterReturning("@annotation(con.lutfly.sbdAcceptTransactional.annotation.AnnotationTest)")
     public void afterReturning(JoinPoint point) throws InterruptedException {
         point.getTarget();
         asyncTest.async();
         System.out.println("我是 AfterReturning");
     }
 
-//    @Before("@annotation(con.lutfly.springbootdemo.annotation.AnnotationTest)")
+//    @Before("@annotation(con.lutfly.sbdAcceptTransactional.annotation.AnnotationTest)")
 //    public void before() {
 //        System.out.println("我是 before");
 //    }
 //
-//    @After("@annotation(con.lutfly.springbootdemo.annotation.AnnotationTest)")
+//    @After("@annotation(con.lutfly.sbdAcceptTransactional.annotation.AnnotationTest)")
 //    public void after() {
 //        System.out.println("我是 after");
 //    }
 
-//    @Around("@annotation(con.lutfly.springbootdemo.annotation.AnnotationTest)")
+//    @Around("@annotation(con.lutfly.sbdAcceptTransactional.annotation.AnnotationTest)")
 //    public void around(ProceedingJoinPoint point) throws Throwable {
 //
 //        System.out.println("我是 around before");

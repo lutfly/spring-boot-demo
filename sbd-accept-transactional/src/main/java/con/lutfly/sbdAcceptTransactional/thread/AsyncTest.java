@@ -1,7 +1,7 @@
-package con.lutfly.springbootdemo.thread;
+package con.lutfly.sbdAcceptTransactional.thread;
 
-import con.lutfly.springbootdemo.entity.User;
-import con.lutfly.springbootdemo.repository.UserRepository;
+import con.lutfly.sbdAcceptTransactional.entity.User;
+import con.lutfly.sbdAcceptTransactional.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;

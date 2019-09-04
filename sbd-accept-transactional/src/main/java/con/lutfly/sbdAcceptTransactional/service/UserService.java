@@ -1,9 +1,8 @@
-package con.lutfly.springbootdemo.service;
+package con.lutfly.sbdAcceptTransactional.service;
 
-import con.lutfly.springbootdemo.annotation.AnnotationTest;
-import con.lutfly.springbootdemo.entity.User;
-import con.lutfly.springbootdemo.repository.UserRepository;
-import con.lutfly.springbootdemo.thread.AsyncTest;
+import con.lutfly.sbdAcceptTransactional.annotation.AnnotationTest;
+import con.lutfly.sbdAcceptTransactional.entity.User;
+import con.lutfly.sbdAcceptTransactional.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

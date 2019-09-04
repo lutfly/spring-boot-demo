@@ -1,6 +1,6 @@
-package con.lutfly.springbootdemo.repository;
+package con.lutfly.sbdAcceptTransactional.repository;
 
-import con.lutfly.springbootdemo.entity.User;
+import con.lutfly.sbdAcceptTransactional.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

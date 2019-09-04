@@ -1,19 +1,24 @@
-package con.lutfly.springbootdemo;
+package com.lutfly.sbdGlobalLocks;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.core.Ordered;
-import org.springframework.core.annotation.AliasFor;
+import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableAsync
 @EnableTransactionManagement()
-public class SpringBootDemoApplication {
+public class SbdGlobalLocksApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDemoApplication.class, args);
+        SpringApplication.run(SbdGlobalLocksApplication.class, args);
+    }
+
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
     }
 
 }

@@ -1,4 +1,4 @@
-package con.lutfly.springbootdemo;
+package con.lutfly.sbdAcceptTransactional;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
