@@ -11,7 +11,7 @@ public class UserController {
         return "hello world!";
     }
 
-    @GetMapping("/")
+    @GetMapping("/ping")
     public String ping() throws InterruptedException {
         return "pong!";
     }
