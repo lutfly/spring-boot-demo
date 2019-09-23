@@ -16,7 +16,6 @@
 
     <modules>
         <module>sbd-accept-transactional</module>
-        <module>sbd-global-locks</module>
     </modules>
 
     <groupId>con.lutfly</groupId>
