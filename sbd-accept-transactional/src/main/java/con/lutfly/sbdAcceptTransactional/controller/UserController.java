@@ -8,7 +8,7 @@ public class UserController {
 
     @GetMapping("/")
     public String test() throws InterruptedException {
-        return "hehe!";
+        return "hello world!";
     }
 
     @GetMapping("/ping")
