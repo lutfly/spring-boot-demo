@@ -6,8 +6,8 @@ metadata:
 spec:
   strategy:
     rollingUpdate:
-      maxSurge: 50%
-      maxUnavailable: 25%
+      maxSurge: 50%  #滚动升级时会先启动1个pod
+      maxUnavailable: 25%  #滚动升级时允许的最大Unavailable的pod个数
   selector:
     matchLabels:
       app: springclouddemo

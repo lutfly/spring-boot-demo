@@ -7,12 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @GetMapping("/")
-    public String test() throws InterruptedException {
-        return "hehe!";
+    public String test()  {
+        return "hello laidian!";
+//        return "你好 来电!";
+
     }
 
     @GetMapping("/ping")
-    public String ping() throws InterruptedException {
+    public String ping() {
         return "pong!";
     }
 }
