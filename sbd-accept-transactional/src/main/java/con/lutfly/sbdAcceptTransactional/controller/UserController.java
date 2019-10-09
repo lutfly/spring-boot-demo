@@ -8,8 +8,8 @@ public class UserController {
 
     @GetMapping("/")
     public String test()  {
-        return "hello laidian!";
-//        return "你好 来电!";
+//        return "hello laidian!";
+        return "你好 来电!";
 
     }
 
