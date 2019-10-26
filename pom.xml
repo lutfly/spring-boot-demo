@@ -15,8 +15,8 @@
     </properties>
 
     <modules>
-        <module>sbd-accept-transactional</module>
-        <module>sbd-global-locks</module>
+        <module>accept-transactional</module>
+        <module>global-locks</module>
     </modules>
 
     <groupId>con.lutfly</groupId>
@@ -30,6 +30,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skipTests>true</skipTests>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
             </plugin>
         </plugins>
     </build>
