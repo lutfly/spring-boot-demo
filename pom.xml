@@ -17,6 +17,8 @@
     <modules>
         <module>accept-transactional</module>
         <module>global-locks</module>
+        <module>design-patterns</module>
+        <module>redisson</module>
     </modules>
 
     <groupId>con.lutfly</groupId>
