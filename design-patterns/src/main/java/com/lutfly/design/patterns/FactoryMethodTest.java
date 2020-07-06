@@ -1,6 +1,5 @@
 package com.lutfly.design.patterns;
 
-import com.sun.tools.javac.util.Convert;
 
 /**
  * 分析：有很多种类的畜牧场，如养马场用于养马，养牛场用于养牛，所以该实例用工厂方法模式比较适合。
