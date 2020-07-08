@@ -12,29 +12,27 @@ package com.lutfly.design.patterns;
  * Author	Date	Changes
  * fengy  2020/7/7 Created
  */
-public class AdapterTests  {
+public class AdapterTests {
     public static void main(String[] args) {
-    int id =1;
-
-    Target  target= new Adapter(new ConcreteEncrypt(),new DataSourceOperator());
+        Target target = new Adapter(new ConcreteEncrypt(), new DataSourceOperator());
         target.save("zhangsan");
     }
 
 }
 
-interface Target{
+interface Target {
     void save(String id);
 }
 
-class Adapter implements Target{
+class Adapter implements Target {
 
     private Encrypt encrypt;
 
     private DataSourceOperator operator;
 
-    public Adapter(Encrypt encrypt ,DataSourceOperator operator) {
+    public Adapter(Encrypt encrypt, DataSourceOperator operator) {
         this.encrypt = encrypt;
-        this.operator=operator;
+        this.operator = operator;
     }
 
     @Override
@@ -44,10 +42,11 @@ class Adapter implements Target{
     }
 }
 
-interface Encrypt{
+interface Encrypt {
     int encrypt(String name);
 }
-class ConcreteEncrypt implements Encrypt{
+
+class ConcreteEncrypt implements Encrypt {
 
     @Override
     public int encrypt(String name) {
@@ -55,9 +54,9 @@ class ConcreteEncrypt implements Encrypt{
     }
 }
 
-class DataSourceOperator{
+class DataSourceOperator {
 
-    public void save(int userName){
+    public void save(int userName) {
         System.out.println(userName);
     }
 }
