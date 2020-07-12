@@ -11,6 +11,12 @@ package com.lutfly.design.patterns;
  */
 public class BridgeTest {
     /*
+
+    桥接模式(Bridge Pattern)：将抽象部分与它的实现部分分离，使它们都可以独立地变化。它是
+    一种对象结构型模式，又称为柄体(Handle and Body)模式或接口(Interface)模式。
+
+    处理多层继承存在的问题
+
     分析两个维度：  文件格式 多种数据库类型
      */
     public static void main(String[] args) {

@@ -1,8 +1,8 @@
-package con.lutfly.acceptTransactional.service;
+package com.lutfly.acceptTransactional.service;
 
-import con.lutfly.acceptTransactional.annotation.AnnotationTest;
-import con.lutfly.acceptTransactional.entity.User;
-import con.lutfly.acceptTransactional.repository.UserRepository;
+import com.lutfly.acceptTransactional.annotation.AnnotationTest;
+import com.lutfly.acceptTransactional.entity.User;
+import com.lutfly.acceptTransactional.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,7 +20,7 @@ public class UserService {
     @AnnotationTest
     public void test()  {
         System.out.println("update 之前: ");
-        User user = userRepository.getOne(1l);
+        User user = userRepository.getOne(1L);
         System.out.println(user);
         int i = new Random().nextInt(100);
         user.setAge(i);

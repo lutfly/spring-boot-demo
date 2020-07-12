@@ -1,6 +1,6 @@
-package con.lutfly.acceptTransactional.controller;
+package com.lutfly.acceptTransactional.controller;
 
-import con.lutfly.acceptTransactional.service.UserService;
+import com.lutfly.acceptTransactional.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +12,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/")
-    public void test() throws InterruptedException {
+    public void test()  {
         userService.test();
     }
 

@@ -13,6 +13,13 @@ package com.lutfly.design.patterns;
  * fengy  2020/7/7 Created
  */
 public class AdapterTests {
+    /*
+        适配器模式(Adapter Pattern)：将一个接口转换成客户希望的另一个接口，使接口不兼容的那
+        些类可以一起工作，其别名为包装器(Wrapper)。适配器模式既可以作为类结构型模式，也可
+        以作为对象结构型模式。
+
+        适配器让那些由于接口不兼容而不能交互的类可以一起工作
+     */
     public static void main(String[] args) {
         Target target = new Adapter(new ConcreteEncrypt(), new DataSourceOperator());
         target.save("zhangsan");

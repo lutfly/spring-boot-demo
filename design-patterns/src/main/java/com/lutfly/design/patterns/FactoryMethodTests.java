@@ -9,6 +9,12 @@ package com.lutfly.design.patterns;
  * @since 2020/6/29
  */
 public class FactoryMethodTests {
+    /*
+    工厂方法模式(Factory Method Pattern)：定义一个用于创建对象的接口，让子类决定将哪一个
+    类实例化。工厂方法模式让一个类的实例化延迟到其子类。工厂方法模式又简称为工厂模式
+    (Factory Pattern)，又可称作虚拟构造器模式(Virtual Constructor Pattern)或多态工厂模式
+    (Polymorphic Factory Pattern)。工厂方法模式是一种类创建型模式。
+     */
 
     public static void main(String[] args) {
         PDFReaderFactory readerFactory = new PDFReaderFactory();

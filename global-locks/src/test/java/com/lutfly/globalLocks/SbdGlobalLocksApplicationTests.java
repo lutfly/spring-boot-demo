@@ -60,10 +60,10 @@ public class SbdGlobalLocksApplicationTests {
     @Test
     public void test1() throws InterruptedException {
         Lock lock = redisLockRegistry.obtain("lock");
-        while (true) {
+        do {
             if (lock.tryLock(1, TimeUnit.SECONDS)) {
                 try {
-                    System.out.println("  获取锁成功   "+ i++);
+                    System.out.println("  获取锁成功   " + i++);
                     TimeUnit.SECONDS.sleep(3);
                 } finally {
                     lock.unlock();
@@ -72,7 +72,7 @@ public class SbdGlobalLocksApplicationTests {
             } else {
                 System.out.println("  获取锁失败   ");
             }
-        }
+        } while (i <= 100);
     }
 
     @Test

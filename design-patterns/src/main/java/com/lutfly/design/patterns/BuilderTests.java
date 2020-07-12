@@ -7,6 +7,10 @@ package com.lutfly.design.patterns;
  * @since 2020/7/3
  */
 public class BuilderTests {
+    /*
+         建造者模式(Builder Pattern)：将一个复杂对象的构建与它的表示分离，使得同样的构建过程可
+        以创建不同的表示。建造者模式是一种对象创建型模式。
+     */
     public static void main(String[] args) {
 //        Director director = new Director();
         System.out.println(new HummerBuilder().construct());

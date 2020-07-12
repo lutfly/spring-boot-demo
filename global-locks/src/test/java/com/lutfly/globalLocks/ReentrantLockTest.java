@@ -9,7 +9,7 @@ public class ReentrantLockTest {
     private static Lock lock1 = new ReentrantLock();
     private static Lock lock2 = new ReentrantLock();
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args)  {
 
         Thread thread = new Thread(new ThreadDemo(lock1, lock2));//该线程先获取锁1,再获取锁2
         Thread thread1 = new Thread(new ThreadDemo(lock2, lock1));//该线程先获取锁2,再获取锁1

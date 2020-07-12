@@ -20,14 +20,14 @@ public class TreasureTest extends SbdGlobalLocksApplicationTests {
      * 参与夺宝测试
      */
     @Test
-    public void concurrentTest() throws InterruptedException {
+    public void concurrentTest()  {
 
         String url = "https://uo.imlaidian.com/user-point/treasure/participateTreasure";
 
         HttpHeaders header = new HttpHeaders();
         header.setContentType(MediaType.APPLICATION_JSON);
         header.set("Authorization", "tewdBlbotexdnkhqi3nr4zprk1uf4");
-        HttpEntity httpEntity = new HttpEntity(header);
+        HttpEntity<String> httpEntity = new HttpEntity<>(header);
 
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url)
                 .queryParam("period", 9)

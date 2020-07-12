@@ -1,6 +1,6 @@
-package con.lutfly.acceptTransactional.repository;
+package com.lutfly.acceptTransactional.repository;
 
-import con.lutfly.acceptTransactional.entity.User;
+import com.lutfly.acceptTransactional.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
