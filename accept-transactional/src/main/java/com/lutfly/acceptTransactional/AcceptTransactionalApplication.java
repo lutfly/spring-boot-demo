@@ -1,4 +1,4 @@
-package con.lutfly.acceptTransactional;
+package com.lutfly.acceptTransactional;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package con.lutfly.acceptTransactional.annotation;
+package com.lutfly.acceptTransactional.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

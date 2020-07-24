@@ -1,4 +1,4 @@
-package con.lutfly.acceptTransactional.entity;
+package com.lutfly.acceptTransactional.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

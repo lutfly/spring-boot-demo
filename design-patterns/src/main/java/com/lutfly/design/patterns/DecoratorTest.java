@@ -15,6 +15,13 @@ import lombok.Data;
  * fengy  2020/7/10 Created
  */
 public class DecoratorTest {
+    /*
+        装饰模式(Decorator Pattern)：动态地给一个对象增加一些额外的职责，就增加对象功能来说，
+        装饰模式比生成子类实现更为灵活。装饰模式是一种对象结构型模式。
+
+        装饰模式是一种用于替代继承的技术，它通过一种无须定义子类的方式来给对象动态增加职
+        责，使用对象之间的关联关系取代类之间的继承关系
+     */
     public static void main(String[] args) {
         Weiyi data = new Weiyi();
         Decorator a = new NixiangshuchuDecorator(data);

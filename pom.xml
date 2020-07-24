@@ -22,7 +22,7 @@
         <module>caffeine-demo</module>
     </modules>
 
-    <groupId>con.lutfly</groupId>
+    <groupId>com.lutfly</groupId>
     <artifactId>spring-boot-demo</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
