@@ -1,7 +1,7 @@
 package com.lutfly.design.patterns;
 
 /**
- * Initialization Demand Holder
+ * Initialization on Demand Holder
  *
  * @author lutong
  * @since 2020/6/30
