@@ -20,6 +20,8 @@
         <module>design-patterns</module>
         <module>redisson</module>
         <module>caffeine-demo</module>
+        <module>dubbo-consumer</module>
+        <module>dubbo-provider</module>
     </modules>
 
     <groupId>com.lutfly</groupId>

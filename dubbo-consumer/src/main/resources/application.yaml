@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: lt-consumer
+  main:
+    allow-bean-definition-overriding: true
+
+# dubbo配置
+dubbo:
+  scan:
+    basePackages: com.lutfly.dubbo.consumer
+  application:
+    name: ${spring.application.name}
+    version: 1.0.0
+    qos-enable: false
+  registry:
+    address: 127.0.0.1:2181
+    protocol: zookeeper
+    client: curator
