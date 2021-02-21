@@ -38,7 +38,7 @@ public class DelayedMessage {
             System.out.println("---订单创建：" + callCdr.getName() + "  订单生成时间" + callCdr.getPutTime());
         }
         new Thread(() -> {
-            LockSupport.parkNanos(15*000000000);
+            LockSupport.parkNanos(15*1000000000);
             RedissonClient redissonClient2 = getRedissonClient();
             RBlockingQueue<Employer> blockingFairQueue2 = redissonClient2.getBlockingQueue("delay_demo");
 //            blockingFairQueue2

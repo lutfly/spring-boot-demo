@@ -19,7 +19,7 @@
         <module>global-locks</module>
         <module>design-patterns</module>
         <module>redisson</module>
-        <module>caffeine-demo</module>
+        <module>guava-demo</module>
         <module>dubbo-consumer</module>
         <module>dubbo-provider</module>
     </modules>
